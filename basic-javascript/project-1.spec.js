@@ -6,4 +6,10 @@ describe("project one helpers", () => {
       expect(helpers.multiplyByTen(3)).toEqual(30);
     });
   });
+
+  describe("subtractFive()", () => {
+    it("subtracts 5 from a number", () => {
+      expect(helpers.subtractFive(5)).toEqual(0);
+    });
+  });
 });
