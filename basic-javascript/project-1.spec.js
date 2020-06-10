@@ -19,4 +19,11 @@ describe("project one helpers", () => {
       expect(helpers.areSameLength("rabah", "hell")).toBeFalsy();
     });
   });
+
+  describe("areEqual()", () => {
+    it("checks if two numbers are equal", () => {
+      expect(helpers.areEqual(9, 90)).toBeFalsy();
+      expect(helpers.areEqual(11.5, 11.5)).toBeTruthy();
+    });
+  });
 });
