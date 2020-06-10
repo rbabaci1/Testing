@@ -1,3 +1,10 @@
-const funcs = require('./project-2');
+const helpers = require("./project-2");
 
-// whoops.. there is no test suite for this file. You'll simply just have to create one :/
+describe("project one helpers", () => {
+  describe("getBiggest()", () => {
+    it("returns the biggest number", () => {
+      expect(helpers.getBiggest(12, 11)).toEqual(12);
+      expect(helpers.getBiggest(14, 15)).toEqual(15);
+    });
+  });
+});
