@@ -23,4 +23,11 @@ describe("project one helpers", () => {
       expect(helpers.isTenOrFive(5)).toBeTruthy();
     });
   });
+
+  describe("isInRange()", () => {
+    it("checks if the number is between 20 <=> 50", () => {
+      expect(helpers.isInRange(21)).toBeTruthy();
+      expect(helpers.isInRange(51)).toBeFalsy();
+    });
+  });
 });
