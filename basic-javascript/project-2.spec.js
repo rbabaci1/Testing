@@ -7,4 +7,12 @@ describe("project one helpers", () => {
       expect(helpers.getBiggest(14, 15)).toEqual(15);
     });
   });
+
+  describe("greeting()", () => {
+    it("greets with the passed language", () => {
+      expect(helpers.greeting("Spanish")).toBe("Hola!");
+      expect(helpers.greeting("German")).toBe("Guten Tag!");
+      expect(helpers.greeting("algerian")).toBe("Hello!");
+    });
+  });
 });
