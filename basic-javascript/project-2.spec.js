@@ -15,4 +15,12 @@ describe("project one helpers", () => {
       expect(helpers.greeting("algerian")).toBe("Hello!");
     });
   });
+
+  describe("isTenOrFive()", () => {
+    it("checks if the number is 10 or 5", () => {
+      expect(helpers.isTenOrFive(10.1)).toBeFalsy();
+      expect(helpers.isTenOrFive(10)).toBeTruthy();
+      expect(helpers.isTenOrFive(5)).toBeTruthy();
+    });
+  });
 });
