@@ -12,4 +12,11 @@ describe("project one helpers", () => {
       expect(helpers.subtractFive(5)).toEqual(0);
     });
   });
+
+  describe("areSameLength()", () => {
+    it("checks if two strings have same length", () => {
+      expect(helpers.areSameLength("rabah", "hello")).toBeTruthy();
+      expect(helpers.areSameLength("rabah", "hell")).toBeFalsy();
+    });
+  });
 });
